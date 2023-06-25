@@ -1,0 +1,283 @@
+/*I planned a lot of my colors in Figma */
+/*I found a color palette that I liked and stuck with it*/
+* {
+    box-sizing: border-box;
+  }
+
+
+:root {
+ /* I used one of my favorite albums for a color palette, using https://coolors.co/ to transfer it into a palette. */
+--pb: #073754ff;
+--cin: #A58F8Aff;
+--os: #495358e0;
+--pg: #4D768Bff;
+--aw: #E3F1F3ff;
+--bu: rgb(228, 90, 48);
+--wh: #ffffff; 
+--ss: #FDD08F;
+--bl: #000;
+
+
+}
+
+
+body {
+    margin: auto;
+    padding: auto;
+    /*switched to arial for my primary font, it is the most professional in my opinion*/
+    font-family: Arial, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Trebuchet MS', sans-serif;
+    color: var(--wh);
+    background-color: var(--pg);
+    line-height: 1.2;
+}
+
+
+/*Header stuff*/
+
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    color: var(--bu);
+    background-image: url("../images/odeszabackground.jpg"); /*image I found on google*/
+    background-size: cover;
+    min-height: 100vh;
+    
+    
+}
+    
+
+header h1 {
+    position: absolute;
+    font-size: 3rem;
+    top: 55% ;
+    left: auto;
+    -webkit-text-stroke: .5px var(--ss)
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 64%;
+    left: auto;
+    
+}
+
+nav a {
+    padding: 2px 40px;
+    font-size: 28px;
+    color: var(--ss);
+    display: inline-block;
+
+    
+}
+
+
+nav a:hover {
+    color: var(--cin);
+}
+
+/*Originally had set to auto for margins, read that it should be 0, reference codes also use 0*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: var(--bu);
+}
+
+p {
+    margin: 0;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.main-body {
+min-height: 160vh;
+}
+
+
+.personal {
+display:flex;
+flex-direction: column;
+
+}
+
+.personal h2 {
+    justify-content: center;
+    font-size: 300%;
+    margin: auto;
+    border-bottom: var(--bl) 2.5px solid;
+    padding: 0px 25%;
+    
+
+}
+
+.personal p {
+    justify-content: center;
+    max-width: 50%;
+    padding-top: 10px;
+    margin: auto;
+}
+
+.portfolio-section {
+display: flex;
+justify-content: space-evenly;
+height: 100vh;
+}
+
+.portfolio-section h2 {
+    justify-content: center;
+    font-size: 300%;
+    margin: auto;
+    text-decoration-line: underline;
+}
+
+.pf-item {
+    min-height: 275px;
+    min-width: 500px;
+    background: var(--bl);
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    border: 8px solid var(--bl);
+}
+
+.pf-item h3 {
+    font-size: 2.5rem;
+}
+
+#SEO {
+    background-image: url("../images/chall1.png");
+    position: absolute;
+    left: 37.5%;
+    top: 180%;
+}
+
+#SEO h3 {
+    position: absolute;
+    top: 75%;
+    left: 35%;
+    font-size: 4rem;
+    color: var(--ss);
+    -webkit-text-stroke: 2px var(--bl);
+}
+
+/* I used https://www.pexels.com/search/computer/ for my placeholder images */
+/* ph1, image from https://www.pexels.com/photo/macbook-pro-on-brown-wooden-table-2312369/ */
+#ph1 {
+    background-image: url("../images/ph1.png");
+    position: absolute;
+    left: 7.5%;
+    top: 180%;
+}
+
+#ph1 h3 {
+    position: absolute;
+    top: 75%;
+    left: 2%;
+    font-size: 4rem;
+    color: var(--ss);
+    -webkit-text-stroke: 2px var(--bl);
+}
+/* ph2, image from https://www.pexels.com/photo/photo-of-a-person-using-a-gray-laptop-computer-2874782/*/
+#ph2 {
+    background-image: url("../images/ph2.png");
+    position: absolute;
+    left: 67.5%;
+    top: 180%;
+}
+#ph2 h3 {
+    position: absolute;
+    top: 75%;
+    left: 4%;
+    font-size: 4rem;
+    color: var(--ss);
+    -webkit-text-stroke: 2px var(--bl);
+}
+/* ph3, img from https://www.pexels.com/photo/close-up-photo-of-gray-laptop-577210/ */
+#ph3 {
+    background-image: url("../images/ph3.png");
+    position: absolute;
+    left: 7.5%;
+    top: 215%;
+}
+
+#ph3 h3 {
+    position: absolute;
+    top: 75%;
+    left: 7%;
+    font-size: 4rem;
+    color: var(--ss);
+    -webkit-text-stroke: 2px var(--bl);
+}
+/* ph4, img from https://www.pexels.com/photo/turned-on-computer-monitor-displaying-text-270360/ */
+#ph4 {
+    background-image: url("../images/ph4.png");
+    position: absolute;
+    left: 37.5%;
+    top: 215%;
+}
+
+#ph4 h3 {
+    position: absolute;
+    top: 75%;
+    left: 9%;
+    font-size: 4rem;
+    color: var(--ss);
+    -webkit-text-stroke: 2px var(--bl);
+}
+
+/* ph5, img from https://www.pexels.com/photo/close-up-photo-of-keyboard-220357/*/
+#ph5 {
+    background-image: url("../images/ph5.png");
+    position: absolute;
+    left: 67.5%;
+    top: 215%;
+}
+#ph5 h3 {
+    position: absolute;
+    top: 75%;
+    left: 11%;
+    font-size: 4rem;
+    color: var(--ss);
+    -webkit-text-stroke: 2px var(--bl);
+}
+
+.contact-section{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 250%;
+    left: 30%
+}
+
+.contact-section h4{
+    font-size: 3rem;
+}
+
+.contact-section a {
+    margin: auto;
+}
+.contact-header {
+    display: inline-block;
+    color: var(--aw);
+    font-size: 1.7rem;
+    justify-content: space-between;
+
+}
+
+.contact-header:hover {
+    color: var(--cin)
+}

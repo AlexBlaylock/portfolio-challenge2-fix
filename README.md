@@ -16,11 +16,13 @@ https://www.w3schools.com/css/css3_flexbox_container.asp
 
 Overall I think that this challenge went like a 7/10 for me, I had a lot of struggles with using CSS. I do believe I am a lot weaker at CSS then I am at HTML, and I think this challenge reflects that.
 
+[SUBMISSION 2]Upon review I am bad at reading acceptance criteria. Should be fixed now.
+
 Screenshots of my page:
 
-![SS1](pfchall2ss1.jpg)
-![SS2](pfchall2ss2.png)
-![SS3](pfchall2ss3.jpg)
+![SS1](pfchall2ss1fix.jpg)
+![SS2](pfchall2ss2fix.jpg)
+![SS3](pfchall2ss3fix.jpg)
 
 Link to my github page:
 https://alexblaylock.github.io/portfolio-challenge2-fix/

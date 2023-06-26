@@ -102,7 +102,7 @@ p {
 
 
 .main-body {
-min-height: 160vh;
+min-height: 90vh;
 }
 
 
@@ -130,7 +130,7 @@ flex-direction: column;
 
 .portfolio-section {
     display: flex;
-    min-height: 100vh;
+    min-height: 80vh;
 
 }
 

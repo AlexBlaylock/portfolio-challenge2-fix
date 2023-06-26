@@ -40,11 +40,10 @@ header {
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    color: var(--bu);
+    color: var(--ss);
     background-image: url("../images/odeszabackground.jpg"); /*image I found on google*/
     background-size: cover;
     min-height: 100vh;
-    
     
 }
     
@@ -54,8 +53,7 @@ header h1 {
     font-size: 3rem;
     top: 55% ;
     left: auto;
-    -webkit-text-stroke: .5px var(--ss)
-    
+  
 }
 
 nav {
@@ -89,7 +87,7 @@ h4,
 h5,
 h6 {
     margin: 0;
-    color: var(--bu);
+    color: var(--ss);
 }
 
 p {
@@ -121,27 +119,28 @@ flex-direction: column;
     border-bottom: var(--bl) 2.5px solid;
     padding: 0px 25%;
     
-
 }
 
 .personal p {
     justify-content: center;
-    max-width: 50%;
+    max-width: 60%;
     padding-top: 10px;
     margin: auto;
 }
 
 .portfolio-section {
-display: flex;
-justify-content: space-evenly;
-height: 100vh;
+    display: flex;
+    min-height: 100vh;
+
 }
 
 .portfolio-section h2 {
     justify-content: center;
     font-size: 300%;
     margin: auto;
-    text-decoration-line: underline;
+    border-bottom: var(--bl) 2.5px solid;
+    padding: 0px 25%;
+    position: relative;
 }
 
 .pf-item {
@@ -160,6 +159,8 @@ height: 100vh;
 
 #SEO {
     background-image: url("../images/chall1.png");
+    background-position: center;
+    background-size: cover;
     position: absolute;
     left: 37.5%;
     top: 180%;
@@ -178,6 +179,8 @@ height: 100vh;
 /* ph1, image from https://www.pexels.com/photo/macbook-pro-on-brown-wooden-table-2312369/ */
 #ph1 {
     background-image: url("../images/ph1.png");
+    background-position: center;
+    background-size: cover;
     position: absolute;
     left: 7.5%;
     top: 180%;
@@ -194,6 +197,8 @@ height: 100vh;
 /* ph2, image from https://www.pexels.com/photo/photo-of-a-person-using-a-gray-laptop-computer-2874782/*/
 #ph2 {
     background-image: url("../images/ph2.png");
+    background-position: center;
+    background-size: cover;
     position: absolute;
     left: 67.5%;
     top: 180%;
@@ -209,6 +214,8 @@ height: 100vh;
 /* ph3, img from https://www.pexels.com/photo/close-up-photo-of-gray-laptop-577210/ */
 #ph3 {
     background-image: url("../images/ph3.png");
+    background-position: center;
+    background-size: cover;
     position: absolute;
     left: 7.5%;
     top: 215%;
@@ -225,6 +232,8 @@ height: 100vh;
 /* ph4, img from https://www.pexels.com/photo/turned-on-computer-monitor-displaying-text-270360/ */
 #ph4 {
     background-image: url("../images/ph4.png");
+    background-position: center;
+    background-size: cover;
     position: absolute;
     left: 37.5%;
     top: 215%;
@@ -242,6 +251,8 @@ height: 100vh;
 /* ph5, img from https://www.pexels.com/photo/close-up-photo-of-keyboard-220357/*/
 #ph5 {
     background-image: url("../images/ph5.png");
+    background-position: center;
+    background-size: cover;
     position: absolute;
     left: 67.5%;
     top: 215%;
@@ -255,29 +266,79 @@ height: 100vh;
     -webkit-text-stroke: 2px var(--bl);
 }
 
-.contact-section{
+.contact-section {
     display: flex;
     justify-content: space-between;
     position: absolute;
     top: 250%;
-    left: 30%
+    left: 18%;
+    width: 60%;
+
 }
 
-.contact-section h4{
-    font-size: 3rem;
+.contact-section h4 {
+    font-size: 2rem;
 }
 
-.contact-section a {
-    margin: auto;
-}
+
+
 .contact-header {
-    display: inline-block;
+    display:flex;
     color: var(--aw);
     font-size: 1.7rem;
-    justify-content: space-between;
-
+    margin: 0;
 }
 
 .contact-header:hover {
     color: var(--cin)
+}
+
+/* 980px screen */
+@media screen and (max-width: 980px) {
+  .portfolio-section {
+       flex-direction: column;
+    align-items: center;
+      }
+
+.pf-item {
+    min-width: 40%;
+    width: 40%;
+    margin: 20px 20px;
+}
+
+.pf-item h3 {
+    position: absolute;
+    top: 220px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#SEO h3,
+#ph1 h3,
+#ph2 h3,
+#ph3 h3,
+#ph4 h3,
+#ph5 h3 {
+  position: static;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+#SEO,
+#ph1,
+#ph2,
+#ph3,
+#ph4,
+#ph5 {
+  position: relative;
+  left: inherit;
+  top: inherit;
+  background-position: center;
+  background-size: cover;
+}
+}
+
+/* 768px screen */
+@media screen and (max-width: 768px) {
+
 }

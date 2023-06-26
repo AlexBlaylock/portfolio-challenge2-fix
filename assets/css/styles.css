@@ -46,7 +46,6 @@ header {
     min-height: 100vh;
     
 }
-    
 
 header h1 {
     position: absolute;
@@ -54,6 +53,15 @@ header h1 {
     top: 55% ;
     left: auto;
   
+}
+
+#my-image {
+    content: url("../images/me.jpg");
+    display: flex;
+    position: relative;
+    top: 325px;
+    width: 200px;
+    height: auto;
 }
 
 nav {
@@ -102,7 +110,7 @@ p {
 
 
 .main-body {
-min-height: 90vh;
+min-height: 180vh;
 }
 
 
@@ -130,7 +138,7 @@ flex-direction: column;
 
 .portfolio-section {
     display: flex;
-    min-height: 80vh;
+    
 
 }
 
@@ -157,20 +165,24 @@ flex-direction: column;
     font-size: 2.5rem;
 }
 
+.pf-item:first-child {
+    min-height: 400px;
+    min-width: 750px;
+}
 #SEO {
     background-image: url("../images/chall1.png");
     background-position: center;
     background-size: cover;
     position: absolute;
-    left: 37.5%;
-    top: 180%;
+    left: 30.5%;
+    top: 130%;
 }
 
 #SEO h3 {
     position: absolute;
     top: 75%;
     left: 35%;
-    font-size: 4rem;
+    font-size: 6rem;
     color: var(--ss);
     -webkit-text-stroke: 2px var(--bl);
 }
@@ -190,6 +202,25 @@ flex-direction: column;
     position: absolute;
     top: 75%;
     left: 2%;
+    font-size: 4rem;
+    color: var(--ss);
+    -webkit-text-stroke: 2px var(--bl);
+}
+
+/* REAL PH2, REPLACING SEO IMAGE */
+#realph2 {
+    background-image: url("../images/realph2.png");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 37.5%;
+    top: 180%;
+}
+
+#realph2 h3 {
+    position: absolute;
+    top: 75%;
+    left: 22.5%;
     font-size: 4rem;
     color: var(--ss);
     -webkit-text-stroke: 2px var(--bl);
@@ -296,7 +327,12 @@ flex-direction: column;
 
 /* 980px screen */
 @media screen and (max-width: 980px) {
-  .portfolio-section {
+    #my-image {
+        width: 150px;
+        height: auto;
+    }
+ 
+    .portfolio-section {
     flex-direction: column;
     align-items: center;
       }
@@ -319,7 +355,8 @@ flex-direction: column;
 #ph2 h3,
 #ph3 h3,
 #ph4 h3,
-#ph5 h3 {
+#ph5 h3,
+#realph2 h3{
   position: static;
   font-size: 2.3rem;
   text-align: center;
@@ -330,17 +367,29 @@ flex-direction: column;
 #ph2,
 #ph3,
 #ph4,
-#ph5 {
+#ph5,
+#realph2 {
   position: relative;
-  left: inherit;
-  top: inherit;
+  left: unset;
+  top: unset;
   background-position: center;
   background-size: cover;
+  
+}
+.contact-section {
+    position:static;
+    width: 70%;
+    margin: 20px;
+    padding-left: 150px;
 }
 }
 
 /* 768px screen */
 @media screen and (max-width: 768px) {
+    #my-image {
+        width: 150px;
+        height: auto;
+    }
 
     .portfolio-section {
         flex-direction: column;
@@ -360,12 +409,15 @@ flex-direction: column;
         text-align: center;
     }
     
+    
+
     #SEO h3,
     #ph1 h3,
     #ph2 h3,
     #ph3 h3,
     #ph4 h3,
-    #ph5 h3 {
+    #ph5 h3,
+    #realph2 h3 {
       position: static;
       font-size: 2.3rem;
       text-align: center;
@@ -376,11 +428,19 @@ flex-direction: column;
     #ph2,
     #ph3,
     #ph4,
-    #ph5 {
+    #ph5,
+    #realph2 {
       position: relative;
       left: inherit;
       top: inherit;
       background-position: center;
       background-size: cover;
     }
+    }
+
+    .contact-section {
+        position: static;
+        width: 70%;
+        margin: 20px;
+        padding-left: 150px;
     }

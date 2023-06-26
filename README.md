@@ -16,7 +16,7 @@ https://www.w3schools.com/css/css3_flexbox_container.asp
 
 Overall I think that this challenge went like a 7/10 for me, I had a lot of struggles with using CSS. I do believe I am a lot weaker at CSS then I am at HTML, and I think this challenge reflects that.
 
-Thank you to my class, in particular:
+Thank you to my classmates, in particular:
 Joy Kwon
 Jack Stendeback
 Nick Hanson
